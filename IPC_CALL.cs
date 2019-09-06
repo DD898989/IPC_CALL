@@ -10,6 +10,8 @@ namespace IPC
         public delegate string[] Method_Delegate(string[] args);
         private event Method_Delegate Method_Event;
         static private string[] NULL = new string[] { "NULL" };
+        
+        
         public IPC_CALL(Method_Delegate methodPtr)//no need to keep the object new from this constructor
         {
             Method_Event += methodPtr;
@@ -29,6 +31,8 @@ namespace IPC
                 }
             }).Start();
         }
+        
+        
         static private void Send(string channel, string[] arr)
         {
             if (arr == null)
@@ -42,6 +46,8 @@ namespace IPC
                 write.Write(string.Join(",", arr));
             }
         }
+        
+        
         static private string[] Wait(string channel)
         {
             using (NamedPipeServerStream wait = new NamedPipeServerStream(channel))
@@ -51,6 +57,8 @@ namespace IPC
                 return rtn.Split(',');
             }
         }
+        
+        
         public static string[] CallMethod(string methodName, string[] paras)
         {
             if (paras == null)
