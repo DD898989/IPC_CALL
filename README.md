@@ -7,6 +7,7 @@ usage:
 1. make IPC_CALL.cs an isolated class library project that can be referenced by many other project
 
 2. Application1: 
+
         static IPC_CALL make_callable = new IPC_CALL(Return_Add_And_Multiple);
         static string[] Return_Add_And_Multiple(string[] args)
         {
@@ -22,6 +23,8 @@ usage:
             return new string[] { add.ToString() ,multiple.ToString() };
         }
         
-3. Applicationcallable: string[] rtn = IPC_CALL.CallMethod("Return_Add_And_Multiple", new string[] { "5", "6", "7" });
-   Console.WriteLine(rtn[0]); //=18
-   Console.WriteLine(rtn[1]); //=210
+3. Application2
+
+       rtn = IPC_CALL.CallMethod("Return_Add_And_Multiple", new string[] { "5", "6", "7" });
+       Console.WriteLine(rtn[0]);//=18
+       Console.WriteLine(rtn[1]);//=210
