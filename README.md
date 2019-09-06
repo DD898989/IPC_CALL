@@ -25,6 +25,6 @@ usage:
         
 3. Application2
 
-       rtn = IPC_CALL.CallMethod("Return_Add_And_Multiple", new string[] { "5", "6", "7" });
+       rtn = IPC_CALL.CallMethod("Return_Add_And_Multiple", "5", "6", "7");
        Console.WriteLine(rtn[0]);//=18
        Console.WriteLine(rtn[1]);//=210
