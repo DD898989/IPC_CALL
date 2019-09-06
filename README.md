@@ -1,10 +1,10 @@
 # IPC_CALL
-simple ipc communication that allow many applications call each others method and get returns
+simple ipc communication that allow many applications call each others method and get returns, it's a simple solution for X86/X64 compatible issues
 
 
 usage:
 
-1. make IPC_CALL.cs an isolated class library project that can be referenced by many other project
+1. make IPC_CALL.cs an isolated class library project that can be referenced by many other projects
 
 2. Application1: 
 
