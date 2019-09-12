@@ -1,0 +1,6 @@
+C:\Users\lenovo\source\repos\IPC_CALL\IPC__CALL\obj\Debug\IPC__CALL.csprojAssemblyReference.cache
+C:\Users\lenovo\source\repos\IPC_CALL\IPC__CALL\bin\Debug\IPC__CALL.dll.config
+C:\Users\lenovo\source\repos\IPC_CALL\IPC__CALL\bin\Debug\IPC__CALL.dll
+C:\Users\lenovo\source\repos\IPC_CALL\IPC__CALL\bin\Debug\IPC__CALL.pdb
+C:\Users\lenovo\source\repos\IPC_CALL\IPC__CALL\obj\Debug\IPC__CALL.dll
+C:\Users\lenovo\source\repos\IPC_CALL\IPC__CALL\obj\Debug\IPC__CALL.pdb

@@ -1,0 +1,10 @@
+C:\Users\lenovo\source\repos\IPC_CALL\X64_APP\bin\x64\Debug\X64_APP.exe.config
+C:\Users\lenovo\source\repos\IPC_CALL\X64_APP\bin\x64\Debug\X64_APP.exe
+C:\Users\lenovo\source\repos\IPC_CALL\X64_APP\bin\x64\Debug\X64_APP.pdb
+C:\Users\lenovo\source\repos\IPC_CALL\X64_APP\bin\x64\Debug\IPC__CALL.dll
+C:\Users\lenovo\source\repos\IPC_CALL\X64_APP\bin\x64\Debug\IPC__CALL.pdb
+C:\Users\lenovo\source\repos\IPC_CALL\X64_APP\bin\x64\Debug\IPC__CALL.dll.config
+C:\Users\lenovo\source\repos\IPC_CALL\X64_APP\obj\x64\Debug\X64_APP.csprojAssemblyReference.cache
+C:\Users\lenovo\source\repos\IPC_CALL\X64_APP\obj\x64\Debug\X64_APP.csproj.CopyComplete
+C:\Users\lenovo\source\repos\IPC_CALL\X64_APP\obj\x64\Debug\X64_APP.exe
+C:\Users\lenovo\source\repos\IPC_CALL\X64_APP\obj\x64\Debug\X64_APP.pdb

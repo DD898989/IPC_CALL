@@ -1,13 +1,17 @@
-using System;
+﻿using System;
 using System.Linq;
 using System.Threading;
 using System.IO;
 using System.IO.Pipes;
+
+
 namespace IPC
 {
-    public class IPC_CALL
+    //[AttributeUsage(AttributeTargets.Method)]
+    public class IPC_CALL// : System.Attribute
     {
-        public delegate string[] Method_Delegate(string[] args);
+
+        public delegate object[] Method_Delegate(string[] args);
         private event Method_Delegate Method_Event;
         static private string[] NULL = new string[] { "NULL" };
 
@@ -24,7 +28,8 @@ namespace IPC
                     if (paras.SequenceEqual(NULL))
                         paras = null;
 
-                    string[] rtn = Method_Event(paras);
+                    object[] _rtn = Method_Event(paras);
+                    string[] rtn = _rtn.OfType<object>().Select(o => o.ToString()).ToArray();
 
                     Send(arr[0], rtn);//arr[0]: return channel, from random guid
                 }
@@ -55,10 +60,13 @@ namespace IPC
             }
         }
 
-        public static string[] CallMethod(string methodName, params string[] paras)
+        public static string[] CallMethod(string methodName, params object[] _paras)
         {
-            if (paras == null)
-                paras = NULL;
+            if (_paras == null)
+                _paras = NULL;
+
+            string[] paras = _paras.OfType<object>().Select(o => o.ToString()).ToArray();
+
 
             string rtnChannel = Guid.NewGuid().ToString();
             Send(methodName, new string[] { rtnChannel }.Concat(paras).ToArray());
